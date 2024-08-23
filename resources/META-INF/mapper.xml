@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="noticeDB">
+	<select id="select1" parameterType="string" resultType="Noticevo">
+		select * from notice where nidx =#{value}
+	</select>
+	<select id="select2" parameterType="string" resultType="Noticevo">
+		select * from userlogin where usuc='D' order by udate desc
+	</select>
+	<update id="okupdate">
+		update userlogin set usuc='Y' where uid=#{uid}
+	</update>
+	<update id="noupdate">
+		update userlogin set usuc='N' where uid=#{uid}
+	</update>
+	<select id="membersel" parameterType="string" resultType="Noticevo2">
+		select * from memberlogin
+	</select>
+	<select id="membersel2" parameterType="integer" resultType="Noticevo2">
+		select * from memberlogin limit #{page},4
+	</select>	
+	<select id="membersel3" parameterType="string" resultType="Noticevo2">
+		select * from memberlogin where midx=#{midx}
+	</select>
+	<delete id="memberdel" parameterType="string">
+		delete from memberlogin where mid=#{sid}
+	</delete>
+	<insert id="writein">
+		insert into noticelist (nidx,nsub,nname,nfile,ntext,nview,nsel,ndate) values ('0',#{nsub},#{nname},#{nfile},#{ntext},#{nview},#{nsel},default)
+	</insert>
+	<select id="writesel1" parameterType="string" resultType="Noticevo3">
+		select * from noticelist
+	</select>
+	<select id="writesel2" parameterType="integer" resultType="Noticevo3">
+		select * from noticelist where nsel = 'Y' order by ndate desc  limit #{page},8 
+	</select>
+	<select id="writesel3" parameterType="integer" resultType="Noticevo3">
+		select * from noticelist where nsel = 'N' order by ndate desc  limit 0,#{page} 
+	</select>
+	<select id="writesel4" parameterType="integer" resultType="Noticevo3">
+		select * from noticelist where nsel = 'N' order by ndate desc  limit #{page},8 
+	</select>
+	<select id="writesel5" parameterType="integer" resultType="Noticevo3">
+		select * from noticelist where nsel = 'Y' order by ndate desc 
+	</select>
+	<delete id="writedel" parameterType="string">
+		delete from noticelist where nsub=#{nsub}
+	</delete>
+	<select id="writeview" parameterType="string" resultType="Noticevo3">
+		select * from noticelist where nidx=#{nidx}
+	</select>
+	<update id="writeupdate">
+		update noticelist set ntext=#{ntext} where nidx=#{nidx}
+	</update>
+	<delete id="writedelete">
+		delete from noticelist where nsub=#{nsub}
+	</delete>
+	<update id="modifyupdate">
+		update memberlogin set mlevel=#{mlevel}, mpoint=#{mpoint}, mrest=#{mrest} where midx=#{midx}
+	</update>
+	<insert id="shop_insert">
+		insert into shopproduct (sidx,smenu1,smenu2,scode,sname,stext1,ssel,sdis,sdissel,scon,scan,ssold,smfile1,smfile2,smfile3,stext2) values ('0',#{smenu1},#{smenu2},#{scode},#{sname},#{stext1},#{ssel},#{sdis},#{sdissel},#{scon},#{scan},#{ssold},#{smfile1},#{smfile2},#{smfile3},#{stext2})
+	</insert>
+	
+	<select id="shoppro1" parameterType="string" resultType="Noticevo4">
+		select * from shopproduct
+	</select>
+	<select id="shoppro2" parameterType="integer" resultType="Noticevo4">
+		select * from shopproduct order by sidx desc limit #{page},8 
+	</select>
+	<delete id="shoprodel" parameterType="String">
+		delete from shopproduct where sidx=#{sidx}
+	</delete>
+	<select id="homesel"  resultType="Noticevo5">
+		select * from homeinfo
+	</select>
+	<update id="homeup">
+		update homeinfo set stitle=#{stitle}, semail=#{semail}, spointok=#{spointok}, spoint=#{spoint}, slevel=#{slevel}, swork=#{swork}, sno=#{sno}, sceo=#{sceo}, stel=#{stel}, snu=#{snu}, scnu=#{scnu}, sad=#{sad}, sare=#{sare}, sname=#{sname}, sema=#{sema}, sbank=#{sbank}, sbno=#{sbno}, scard=#{scard}, sphone=#{sphone}, smo=#{smo}, sdo=#{sdo}, spo=#{spo}, spaper=#{spaper}, sden=#{sden}, spri=#{spri},sdilve=#{sdilve};
+	</update>
+	
+	<select id="memid" resultType="Noticevo2">
+		select * from memberlogin where mid=#{memsel2}
+	</select>
+	<select id="memnm" resultType="Noticevo2">
+		select * from memberlogin where mnm=#{memsel2}
+	</select>
+	<select id="memtel" resultType="Noticevo2">
+		select * from memberlogin where mtel=#{memsel2}
+	</select>
+	<select id="sbanner" resultType="Noticevo6">
+		select * from shopbanner 
+	</select>
+	<update id="sbannerup">
+		update shopbanner set banner1=#{banner1}, bannerurl1=#{bannerurl1}, banner2=#{banner2}, bannerurl2=#{bannerurl2}, banner3=#{banner3}, bannerurl3=#{bannerurl3}, banner4=#{banner4}, bannerurl4=#{bannerurl4}, popup=#{popup}, popupurl=#{popupurl}, adbanner1=#{adbanner1}, adbannerurl1=#{adbannerurl1}, adbanner2=#{adbanner2}, adbannerurl2=#{adbannerurl2}
+	</update>
+	<select id="newarri" resultType="Noticevo7">
+		select * from shopproduct order by sidx desc limit 0,9 
+	</select>
+	
+	<select id="adban" resultType="Noticevo8">
+		select * from shopbanner
+	</select>
+	
+
+	
+	
+	<select id="copysel" resultType="Noticevo10">
+		select * from homeinfo 
+	</select>
+	
+	<insert id="mainjoin">
+		insert into memberlogin (midx,mid,mpw,mnm,mlevel,mpoint,mem,mcel,mtel,mad,memag,msmsag,mindate,mrest) values ('0',#{mid},#{mpw},#{mnm},#{mlevel},#{mpoint},#{mem},#{mcel},#{mtel},#{mad},#{memag},#{msmsag},#{mindate},#{mrest})
+	</insert>
+	
+	<select id="mainlogin"  resultType="Noticevo2">
+		select * from memberlogin where mid=#{mid} and mpw=#{mpw}
+	</select>
+	
+	
+	<select id="faq"  resultType="faqvo">
+		select * from faq
+	</select>
+	
+	<select id="faqse" resultType="faqvo">
+		select * from faq  where qcate= #{sel};
+	</select>
+	
+	<select id="nosel1" parameterType="string" resultType="Noticevo9">
+		select * from noticelist
+	</select>
+	<select id="nosel2" parameterType="integer" resultType="Noticevo9">
+		select * from noticelist where nsel = 'Y' order by ndate desc  limit #{page},8 
+	</select>
+	<select id="nosel3" parameterType="integer" resultType="Noticevo9">
+		select * from noticelist where nsel = 'N' order by ndate desc  limit 0,#{page} 
+	</select>
+	<select id="nosel4" parameterType="integer" resultType="Noticevo9">
+		select * from noticelist where nsel = 'N' order by ndate desc  limit #{page},8 
+	</select>
+	<select id="nosel5" parameterType="integer" resultType="Noticevo9">
+		select * from noticelist where nsel = 'Y' order by ndate desc 
+	</select>
+	
+	<select id="notisel1" resultType="Noticevo9">
+		select * from noticelist where nsel="Y" order by nidx desc
+	</select>
+	<select id="notisel2" resultType="Noticevo9">
+		select * from noticelist  order by nidx desc limit 0,#{num}
+	</select>
+</mapper>
