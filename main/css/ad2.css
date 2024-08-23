@@ -1,0 +1,18 @@
+@charset "utf-8";
+.ad2box{
+	height: 180px;
+  display: block;
+}
+.ad2box > div{
+	width: 1100px;
+	height: 180px;
+	margin:auto;
+	cursor: pointer;
+}
+.ad2box > div > img{
+	width: 1100px;
+	height: 180px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	object-fit: cover;
+}

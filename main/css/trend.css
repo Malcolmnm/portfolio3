@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+.trendul{
+	width: 500px;
+	height: auto;
+}
+.trendul > li{
+	width: 150px;
+	height: 50px;
+	line-height:50px;
+	box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#333333;
+    font-size: 25px;
+    font-weight: 700;
+    float: left;
+    text-indent: 5px;
+}
+.trendul > li:nth-of-type(2) {
+	width: 335px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align:	right;
+    float: right;
+    margin-right: 10px;
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+.vbox{
+	margin:auto;
+	width: 1100px;
+	height: 800px;
+	margin-top:25px;
+}
+.vbox > div:nth-of-type(1){
+	width: 1100px;
+	height: 16px;
+	text-indent: 10px;
+	font-family: 'Noto Sans KR', sans-serif;
+	line-height: 16px;
+    font-size: 12px;
+    color:#333333;
+    opacity: 50%;
+}
+.vbox > div:nth-of-type(2){
+    opacity: 100%;
+	width: 1100px;
+	height: 60px;
+	line-height: 60px;
+    font-size: 27px;
+    border-bottom:2px solid #666666;
+    font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.vul1{
+	width: 1100px;
+	height: 35px;
+	border-bottom:2px solid black;
+	margin-top:45px;
+}
+.vul1> li{
+	height: 35px;
+	text-align: center;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+    color:#000000;
+    font-weight: 600;
+    line-height: 35px;
+    float: left;
+}
+.vul1> li:nth-of-type(1) {
+	width: 50px;
+}
+.vul1 > li:nth-of-type(2) {
+	width: 730px;
+}
+.vul1 > li:nth-of-type(3) {
+	width: 100px;
+}
+.vul1 > li:nth-of-type(4) {
+	width: 120px;
+}
+.vul1 > li:nth-of-type(5) {
+	width: 100px;
+}
+
+
+
+.vul2{
+	margin-top: 0px;
+	border-bottom : 1px solid #333333;
+}
+.vul2 > li{
+	font-size: 15px;
+	font-weight: 300;
+}
+.pdiv{
+	width: 1100px;
+	height: 20px;
+	margin-top:50px;
+}
+.pul{
+	height: 20px;
+	margin-left:42%;
+    text-align: center;
+}
+.pul > li{
+	width: 20px;
+	height: 20px;
+	line-height:20px;
+	border: 1px solid #333333;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 10px;
+    color:#000000;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    text-indent: 0px;
+}
+.pul > li:hover {
+	background-color: #333333;
+	color:white;
+}
+
+
+.pdiv2{
+	width: 1100px;
+	height: 40px;
+	margin-top:35px;
+    text-align: center;
+}
+.pdiv2 > input:nth-of-type(1){
+	width: 400px;
+	height: 35px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 10px;
+    color:#000000;
+    font-weight: 300;
+    text-indent: 8px;
+}
+.pdiv2 > input:nth-of-type(2){
+	width: 80px;
+	height: 35px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 10px;
+    color:white;
+    font-weight: 300;
+    background-color: #000000;
+    border: 0;
+    cursor: pointer;
+}
+.pdiv2 > input:nth-of-type(2):hover {
+    background-color: #333333;
+}
+
+
+
+
+
+
+
+

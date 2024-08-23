@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+.joinbox{
+	margin: auto;
+	width: 1100px;
+	height: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.join_tag{
+	margin-top:15px;
+	width: 100%;
+	height:16px;
+	line-height: 16px;
+    font-size: 12px;
+    font-family: "Malgun Gothic","맑은 고딕","AppleGothic","Dotum","돋움",sans-serif;
+	opacity: 0.5;
+	color:#333333;
+}
+.join_ul{
+	margin-top:10px;
+	width: 1100px;
+	height: 60px;
+	border-bottom: 1px solid #cccccc;
+}
+.join_ul > li{
+	height: 60px;
+	float: right;
+	width: 80px;
+	line-height: 80px;
+	font-weight: 400;
+	font-size: 14px;
+}
+.join_ul > li:nth-of-type(1) {
+	width: 200px;
+	line-height: 60px;
+	font-size: 27px;
+	color:#333333;
+	font-weight: 700;
+	float:left;
+}
+.join_ul > li:nth-of-type(5),.join_ul > li:nth-of-type(3){
+	width: 20px;
+	background-image: url(../ico/step.png);
+	background-repeat: no-repeat;
+	background-size: 45% 20%;
+	background-position-y: 35px;
+}
+.join_ul > li:nth-of-type(3),.join_ul > li:nth-of-type(2),.join_ul > li:nth-of-type(4){
+	opacity: 0.5;
+}
+.join_tep{
+	width: 750px;
+	height: 60px;
+	line-height: 80px;
+	font-weight:300;
+	color:333333px;
+	font-size:22px;
+	border-bottom: 1px solid #cccccc;
+	margin: auto;
+}
+.join_tep2{
+	width: 750px;
+	height: 50px;
+	margin: auto;
+	line-height: 50px;
+	font-weight:400;
+	color:333333px;
+	font-size:13px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	display: block;
+}
+.join_tep2 > input{
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	vertical-align: -5px;
+}
+.join_tep2 > a{
+	margin-left: 10px;
+	opacity: 0.5;
+}
+.join_tep2 > a:nth-of-type(2){
+	text-decoration: underline;
+}
+.join_notice{
+	width: 740px;
+	height: 130px;
+	margin: auto;
+	border: 2px solid #cccccc;
+	overflow-y: auto; 
+	text-indent: 5px;
+}
+.btnbox{
+	width: 1100px;
+	height: 45px;
+	margin-top: 35px;
+	text-align: center;
+}
+.joinbtn{
+	width: 150px;
+	height: 45px;
+	background-color: #666666;
+	border: 1px solid #666666;
+	font-size: 14px;
+	color:#ffffff;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
