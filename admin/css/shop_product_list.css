@@ -1,0 +1,205 @@
+@charset "UTF-8";
+body{
+	font-family:'굴림';
+	font-size:12px;
+	color:#333333;
+}
+.smbox{
+	width: 1100px;
+	height: auto;
+	margin:auto;
+}
+.stop{
+	margin-top:20px;
+	width: 200px;
+	height: 30px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	color:#333333;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 30px;
+}
+.stop2{
+	width: 500px;
+	height: 40px;
+	margin-top: 10px;
+	line-height: 40px;
+	margin-left:25px;
+}
+.stop2 > select{
+	width: 100px;
+	height: 35px;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.stop2 > input:nth-of-type(1) {
+	width: 270px;
+	height: 35px;
+	border: 2px solid black;
+	box-sizing: border-box;
+}
+.stop2 > input:nth-of-type(2) {
+	width: 100px;
+	height: 35px;
+	background-color: black;
+	color:white;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.stop2 > input:nth-of-type(2):hover{
+	background-color: gray;
+}
+.stopul{
+	width: 1000px;
+	height: 50px;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: rgb(81,61,61);
+	font-size:13px;
+	color:wheat;
+	margin-left: 25px;
+	line-height: 50px;
+	margin-top:25px;
+}
+.stopul > li{
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	float: left;
+	margin-top:17px;
+	border-right: 1px solid wheat;
+	box-sizing: border-box;
+}
+.stopul > li:nth-of-type(1) {
+	width: 40px;
+	position: relative;
+}
+.stopul > li:nth-of-type(2) {
+	width: 80px;
+}
+.stopul > li:nth-of-type(3) {
+	width: 60px;
+}
+.stopul > li:nth-of-type(4) {
+	width: 140px;
+}
+.stopul > li:nth-of-type(5) {
+	width: 130px;
+}
+.stopul > li:nth-of-type(6) {
+	width: 100px;
+}
+.stopul > li:nth-of-type(7) {
+	width: 100px;
+}
+.stopul > li:nth-of-type(8) {
+	width: 100px;
+}
+.stopul > li:nth-of-type(9) {
+	width: 100px;
+}
+.stopul > li:nth-of-type(10) {
+	width: 70px;
+}
+.stopul > li:nth-of-type(11) {
+	width: 70px;
+	border: 0;
+	position: relative;
+}
+.stopul > li:nth-of-type(1) > input{
+	width: 18px;
+	height: 18px;
+	position:absolute;
+	top:-3px;
+	left:5px;
+}
+.snoul{
+	width: 1000px;
+	height: 50px;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	margin-left: 25px;
+}
+.snoul > li{
+	width: 1000px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.sacul{
+	background-color:white;
+	color:#333333;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	font-family:'굴림';
+	font-size:12px;
+	margin-top:0px;
+}
+.sacul > li{
+	border-right: 1px solid black;
+}
+.sdelbtn{
+	width: 150px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	box-sizing: border-box;
+	background-color: rgb(81,61,61);
+	color:wheat;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:13px;
+	margin-top:50px;
+	margin-left: 25px;
+}
+.sacul > li:nth-of-type(11) > input {
+	width: 50px;
+	height: 30px;
+	box-sizing: border-box;
+	background-color: black;
+	color:white;
+	font-size:12px;
+	position: absolute;
+	top:-6px;
+	left:15px;
+}
+.sacul > li:nth-of-type(12) > input:hover{
+	background-color: gray;
+}
+.sacul > li:nth-of-type(12) > input:nth-of-type(1) {
+	left: 8px;
+}
+.sacul > li:nth-of-type(12) > input:nth-of-type(2) {
+	left: 63px;
+}
+.snextbox{
+	width: 1000px;
+	height: 35px;
+	margin-top : 32px;
+	text-align: center;
+}
+.snextbox > input{
+	width: 35px;
+	height: 35px;
+	margin-right:8px;
+	font-size:12px;
+	background-color: black;
+	color:white;
+}
+.snextbox > input:hover {
+	background-color: gray;
+}
+.sdelbtn2{
+	background-color:rgb(250,53,36);
+	width: 150px;
+	height: 45px;
+	float: right;
+	margin-right: 75px;
+	color:white;
+}
+.shopimg{
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+

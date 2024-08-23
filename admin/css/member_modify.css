@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.modify_h{
+	width: 550px; 
+	height: 60px;
+	background-color: rgb(61,60,60);
+	line-height: 60px;
+	color:#cccccc;
+	font-weight: bold;
+	font-size:19px;
+	text-indent: 5px;
+	box-sizing: border-box;
+}
+.sec1{
+	width: 550px;
+	height: 490px;
+	box-sizing: border-box;
+}
+.divbox1{
+	width: 500px;
+	height: auto;
+	margin:auto;
+}
+.boxul{
+	width: 500px;
+	height: 45px;
+	border-bottom: 2.5px solid #333333;
+	box-sizing: border-box;
+}
+.boxul > li{
+	float: left;
+	height: 45px;
+	line-height: 45px;
+	text-align: left;
+	text-indent: 5px;
+	width: 150px;
+	font-size: 13px;
+	font-weight: bolder;
+}
+.boxul > li:nth-of-type(2) {
+	width: 350px;
+	font-weight: normal;
+}
+.mote{
+	width: 210px;
+	height: 33px;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.mora{
+	margin-left: 30px;
+}
+.divbox2{
+	width: 500px;
+	height: auto;
+	margin:auto;
+	margin-top: 20px;
+	text-align: center;
+}
+.divbox2 > input{
+	width: 150px;
+	height: 45px;
+	color:white;
+	background-color: #513D3D;
+	border: 0;
+}
+
+.divbox2 > input:nth-of-type(2) {
+	background-color: rgb(61,60,60);
+	margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+

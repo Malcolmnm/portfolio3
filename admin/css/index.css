@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body{
+	background-color: #161616;
+	position: relative;
+}
+.box{
+	position :absolute;
+	top : 350px;
+	width: 100%;	
+	height: 300px;
+}
+.ulcss{
+	width: 190px;
+	height: 33px;
+	position: absolute;
+	top: -33px;
+	margin-left:50%;
+	left:-300px;
+}
+.ulcss > li:nth-of-type(1){
+	background-image: url("../ico/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 30px;
+	height: 33px;
+	box-sizing: border-box;
+}
+.ulcss > li:nth-of-type(2) {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: #cccccc;
+	box-sizing: border-box;
+	width: 145px;
+	height: 33px;
+	line-height: 33px;
+	position:absolute;
+	top:0;
+	left: 40px;
+}
+.inbox{
+	width:600px;
+	height: 280px;
+	border: 1px solid white;
+	background-color: rgb(61, 60, 60);
+	position: absolute;
+	top: 5px;
+	margin-left: 50%;
+	left: -300px;
+}
+.inbox > input:nth-of-type(1) {
+	width: 250px;
+	height: 30px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	text-indent: 5px;
+}
+
+.inbox > input:nth-of-type(2) {
+	width: 250px;
+	height: 30px;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	text-indent: 5px;
+}
+
+.inbox > input:nth-of-type(3) {
+	width: 150px;
+	height: 80px;
+	position: absolute;
+	background-color: #734F4F;
+	border: 0px;
+	top: 50px;
+	right: 50px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+}
+.inbox > a{
+	width: 500px;
+	height: 30px;
+	line-height: 30px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	color: #cccccc;
+	position: absolute;
+	top: 150px;
+	left: 50px;
+}
+.inbox > label:nth-of-type(1) {
+	width: 120px;
+	height: 40px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	line-height: 40px;
+	position: absolute;
+	color: #ffffff;
+	left: 50px;
+	cursor:pointer;
+	bottom: 25px;
+}
+.inbox > label:nth-of-type(2) {
+	width: 120px;
+	height: 40px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	line-height: 40px;
+	position: absolute;
+	color: #ffffff;
+	right: 50px;
+	bottom: 25px;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

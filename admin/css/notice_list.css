@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.notice_box{
+	width: 1100px;
+	height: auto;
+	margin: auto;
+}
+.notice_sub{
+	width: 1100px;
+	height: 30px;
+	margin-top: 30px;
+	font-size: 15px;
+	color: #333333;
+	font-weight: bold;
+	margin-bottom:20px;
+}
+.notice_sub > a{
+	color:red;
+}
+.notice_big{
+	width: 1100px;
+	height: auto;
+	margin: auto;
+}
+.notice_ulsub{
+	width: 1000px;
+	height: 40px;
+	border-top: 3px solid gray;
+	border-bottom: 1px solid gray;
+	box-sizing: border-box;
+}
+.notice_ulsub >li{
+	float: left;
+	height: inherit;
+	line-height: 40px;
+}
+.notice_ulsub >li:nth-of-type(1) {
+	width: 30px;
+}
+.notice_ulsub >li:nth-of-type(2) {
+	width: 70px;
+}
+.notice_ulsub >li:nth-of-type(3) {
+	width: 550px;
+}
+.notice_ulsub >li:nth-of-type(4) {
+	width: 100px;
+}
+.notice_ulsub >li:nth-of-type(5) {
+	width: 150px;
+}
+.notice_ulsub >li:nth-of-type(6) {
+	width: 100px;
+}
+.notice_ulsub >li:nth-of-type(1) > input{
+	width: 15px;
+	height: 15px;
+}
+.notice_ulempty{
+	width: 1000px;
+	height: 40px;
+}
+.notice_ulempty > li{
+	width: 1000px;
+	height: 40px;
+	border-bottom: 1px solid gray;
+	box-sizing: border-box;
+	line-height: 40px;
+}
+.notice_ultitle{
+	border-top: 0;
+}
+.notice_ultitle > li:nth-of-type(3){
+	text-align: left;
+	text-indent: 10px;
+}
+.notice_btn{
+	width: 1000px;
+	height: 45px;
+	margin-top: 35px;
+}
+.notice_btn > input{
+	width: 150px;
+	height: 45px;
+	box-sizing: border-box;
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 15px;
+}
+.notice_btn > input:nth-of-type(1) {
+	background-color: rgb(81,61,61);
+}
+.notice_btn > input:nth-of-type(2) {
+	background-color: rgb(132,6,6);
+}
+.notice_numbtn{
+	width:1000px;
+	height: 30px;
+	margin-top: 25px;
+}
+.notice_numbtn > ul{
+	height: 30px;
+	font-family: "굴림";
+	font-size: 13px;
+	color: #333333;
+	margin:auto;
+}
+.notice_numbtn > ul >li{
+	width:30px;
+	height: 30px;
+	float: left;
+	border: 1px solid gray;
+	box-sizing: border-box;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.notice_numbtn > ul >li:hover {
+	background-color: gray;
+}
+
+

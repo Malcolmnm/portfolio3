@@ -1,0 +1,140 @@
+@charset "UTF-8";
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.shopdiv{
+	width: 1000px;
+	height: auto;
+	margin: auto;
+}
+.shopsub{
+	width: 1000px;
+	height: 30px;
+	margin-top: 20px;
+	font-size: 15px;
+	color:#333333;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.shopsub > a{
+	color:red;
+	margin-right: 5px;
+}
+.shop_ul{
+	width: 1000px;
+	height: 40px;
+	font-size: 13px;
+	color:#333333;
+	margin-bottom: 2px;
+}
+.shop_ul > li{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	text-align: left;
+	text-indent: 7px;
+}
+.shop_ul > li:nth-of-type(1){
+	background-color: rgb(142,106,106);
+	color: white;
+	width: 160px;
+}
+.shop_ul > li:nth-of-type(2){
+	width: 840px;
+}
+.shop_ul > li:nth-of-type(2) > select{
+	width: 120px;
+	box-sizing:border-box;
+	height: 30px;
+}
+.shop_ul > li:nth-of-type(2) > input[type=text]{
+	width: 120px;
+	height: 30px;
+	box-sizing:border-box;
+}
+.shop_ul > li:nth-of-type(2) > input[type=button]{
+	width: 80px;
+	height: 30px;
+	background-color: rgb(81,61,61);
+	color:white;
+	box-sizing:border-box;
+	margin-left: 3px;
+	margin-right: 5px;
+}
+
+.shop_ul2 > li:nth-of-type(2) > input[type=text]{
+	width: 250px;
+	height: 30px;
+	box-sizing:border-box;
+	margin-right: 5px;
+}
+
+.shop_ul3 > li:nth-of-type(2) > input[type=text]{
+	width: 500px;
+	height: 30px;
+	box-sizing:border-box;
+	margin-right: 5px;
+	text-align: right;
+}
+
+.shop_ul4 > li:nth-of-type(2) > input[type=text]{
+	width: 100px;
+	height: 30px;
+	box-sizing:border-box;
+	margin-right: 5px;
+	text-align: right;
+}
+.shop_ul4 > li:nth-of-type(2) > label{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.shop_ul4 > li:nth-of-type(2) > label:nth-of-type(2) {
+	margin-left: 30px;
+}
+.shop_ul5{
+	height: 160px;
+	line-height: 160px;
+}
+.shop_ul5 > li{
+	height: 160px;
+	line-height: 160px;
+}
+.shop_ul5 > li:nth-of-type(2) > div {
+	width: 800px;
+	height: 50px;
+	line-height: 50px;
+}
+.shop_ul6{
+	height: 420px;
+	line-height: 420px;
+}
+.shop_ul6 > li{
+	height: 420px;
+	line-height: 420px;
+}
+.shop_ul6 > li:nth-of-type(2)  {
+	margin-left: 5px;
+	width: 800px;
+}
+.shopbtn{
+	width: 1000px;
+	height: 45px;
+	border: 0;
+	text-align: center;
+	line-height: 45px;
+	margin-top:30px;
+}
+.shopbtn > input{
+	width: 150px;
+	height: 45px;
+	color:white;
+	background-color:rgb(81,61,61);
+}
+.shopbtn > input:nth-of-type(2) {
+	background-color:rgb(132,6,6);
+	margin-left:10px;
+}
+
+

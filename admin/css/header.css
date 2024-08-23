@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.box{
+	width:1100px;
+	height: 50px;
+	background-color: rgb(61, 60, 60);
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	color:#CCCCCC;
+	margin:auto;
+}
+.img{
+	width: 30px;
+	height: 30px;
+	background-image: url("../ico/logo.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-top: 11px;
+}
+ul{
+	width: 1100px;
+	height: 50px;
+}
+ul > li{
+	float: right;
+	width:100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+ul> li:nth-of-type(1),ul> li:nth-of-type(2) {
+	float: left;
+}
+ul> li:nth-of-type(3){
+	cursor: pointer;
+}
